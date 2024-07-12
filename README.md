@@ -3,7 +3,7 @@
 <img src="https://cdn-icons-png.flaticon.com/512/8284/8284643.png" width="150" height="150" alt="icon">
 </div>
 
-<h1 align="center">TCP/UDP Ethernet</h1>
+<h1 align="center">TCP / UDP Ethernet</h1>
 
 * [Purpose](#purpose)
 * [Features](#features)
@@ -18,3 +18,18 @@
 <div align="justify">
 
 This project aims to measuring TCP/UDP protocol performance with Python in Raspberry Pi 4 via Ethernet connection.
+
+## Features
+### Prerequisites
+* Ethernet cable and Modem
+* Raspberry Pi 4 - 4GB (at least)
+* SD Card (32GB at least) and reader
+
+### Notes
+1. 
+
+</div>
+
+## Project Structure
+
+The project follows this directory structure:
