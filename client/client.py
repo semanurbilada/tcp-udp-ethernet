@@ -11,7 +11,7 @@ s.connect((server_ip, port))
 print(f"Connected to server at {server_ip}:{port}")
 
 try:
-    for i in range(1000000):
+    for i in range(100):
         timestamp = time.time()
         message = f'{timestamp} Hello this is your client! Message {i+1}'
         s.send(message.encode('utf-8'))
