@@ -1,7 +1,9 @@
 import time
 import socket
 
-s = socket.socket()          
+s = socket.socket()
+# s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) #udp
+# s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) #tcp  
 print("Socket successfully created")
 
 port = 12345      
@@ -16,7 +18,6 @@ print("Socket is listening")
 while True: 
     c, addr = s.accept()      
     print('Got connection from', addr)
-
     last_received_time = None
 
     try:
@@ -34,7 +35,8 @@ while True:
                 frequency = 1 / elapsed_time if elapsed_time > 0 else float('inf')
                 print(f"Timestamp: {current_time}, Frequency: {frequency:.2f} Hz\n")
 
-                save_path = f"./saves/result.txt" #frequencies.txt file
+                # save_path = f"./saves/result.txt" #frequencies.txt file
+                # cv2.imwrite(save_path, current_time, frequency)
             else:
                 print(f"Timestamp: {current_time}, Frequency: N/A (first message)\n")
 
@@ -47,10 +49,8 @@ while True:
             """
             response = 'Thank you for connecting!'
             c.send(response.encode('utf-8'))
-
     except Exception as e:
         print(f"Error connecting to client: {e}")
-
     finally:
         s.close()
         print("Connection closed")

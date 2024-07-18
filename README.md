@@ -34,13 +34,59 @@ This project aims to measuring TCP/UDP protocol performance with Python in Raspb
 
 The project follows this directory structure:
 
-...
+```
+tcp-udp-ethernet/
+│
+├── client/
+│   └── client.py
+│
+├── server/
+│   └── server.py
+│
+├── gitignore
+├── README.md
+└── requirements.txt
+```
+
+- client/: Contains ...
+- server/: Contains ...
+- requirements.txt: Lists project dependencies.
 
 ## Raspberry Pi
 
 ### How To Run?
-...
+1. Virtual environment setup:
+```
+python3 -m venv env
+```
 
+2. To activate the virtual environment (Windows):
+```
+env/Scripts/activate
+```
+
+3. To activate the virtual environment (Linux / MacOS):
+```
+source env/bin/activate
+```
+
+4. Install dependencies:
+```
+pip install -r requirements.txt
+```
+or
+```
+pip3 install -r requirements.txt
+```
+
+5. Run:
+```
+python3 server.py
+```
+and
+```
+python3 client.py
+```
 
 ## Licence
 
