@@ -13,13 +13,20 @@
 * [Raspberry Pi](#raspberry-pi)
     * [How To Run?](#how-to-run)
 * [Licence](#licence)
+* [References](#references)
 
 ## Purpose
 <div align="justify">
 
 This project aims to measuring TCP/UDP protocol performance with Python in Raspberry Pi 4 via Ethernet connection.
+- TCP: Transmission Control Protocol
+- UDP: User Datagram Protocol
 
 ## Features
+- TCP Client and Server
+- UDP Client and Server
+- Performance Measurement: Latency - Throughput - Reliability
+
 ### Prerequisites
 * Ethernet cable and Modem
 * Raspberry Pi 4 (4GB at least)
@@ -91,3 +98,9 @@ python3 client.py
 ## Licence
 
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/semanurbilada/tcp-udp-ethernet?tab=MIT-1-ov-file#readme) file for details.
+
+
+## References
+
+- https://wiki.python.org/moin/TcpCommunication
+- https://wiki.python.org/moin/UdpCommunication
