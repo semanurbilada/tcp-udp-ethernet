@@ -1,9 +1,9 @@
 import time
 import socket
 
-s = socket.socket()   
-# s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) #udp
-# s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) #tcp
+# s = socket.socket()
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) #tcp
+
 port = 12345
 server_ip = 'server_ip'
 

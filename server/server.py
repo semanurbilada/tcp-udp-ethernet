@@ -1,9 +1,8 @@
 import time
 import socket
 
-s = socket.socket()
-# s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) #udp
-# s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) #tcp  
+# s = socket.socket()
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) #tcp  
 print("Socket successfully created")
 
 port = 12345      
@@ -35,12 +34,10 @@ while True:
                 frequency = 1 / elapsed_time if elapsed_time > 0 else float('inf')
                 print(f"Timestamp: {current_time}, Frequency: {frequency:.2f} Hz\n")
 
-                # save_path = f"./saves/result.txt" #frequencies.txt file
-                # cv2.imwrite(save_path, current_time, frequency)
             else:
                 print(f"Timestamp: {current_time}, Frequency: N/A (first message)\n")
 
-            last_received_time = current_time
+            last_received_time = current_time # calculating Hz based on received timestamp
             """
             1 Hz means one occurrence per second.
             1 kHz (kilohertz) equals 1,000 occurrences per second.
