@@ -12,14 +12,14 @@ try:
         timestamp = time.time()
         message = f'{timestamp} Hello this is your client! Message {i+1}'
 
-        s.sendto(message, (server_ip, port))
+        s.sendto(message.encode('utf-8'), (server_ip, port))
         print(f"Message {i+1} sent with timestamp {timestamp}")
 
-        response = s.recvfrom(1024)
-        print(f"Response from server: {response}\n")
+        response, _ = s.recvfrom(1024)
+        print(f"Response from server: {response.decode('utf-8')}\n")
 
 except Exception as e:
-        print(f"Error connecting to client: {e}")
+    print(f"Error connecting to client: {e}")
 
 finally:
     s.close()
