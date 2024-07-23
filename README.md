@@ -23,8 +23,7 @@ This project aims to measuring TCP/UDP protocol performance with Python in Raspb
 - UDP: User Datagram Protocol
 
 ## Features
-- TCP Client and Server
-- UDP Client and Server
+- Both TCP/UDP Client and Server
 - Performance Measurement: Latency - Throughput - Reliability
 
 ### Prerequisites
@@ -45,39 +44,27 @@ The project follows this directory structure:
 tcp-udp-ethernet/
 │
 ├── client/
-│   └── client.py
+│   ├── client.py
+│   └── udp_client.py
 │
 ├── server/
-│   └── server.py
+│   ├── server.py
+│   └── udp_server.py
 │
-├── gitignore
+├── .gitignore
+├── LICENSE
 ├── README.md
 └── requirements.txt
 ```
 
-- client/: Contains ...
-- server/: Contains ...
+- client/: Contains client side codes.
+- server/: Contains server side codes.
 - requirements.txt: Lists project dependencies.
 
 ## Raspberry Pi
 
 ### How To Run?
-1. Virtual environment setup:
-```
-python3 -m venv env
-```
-
-2. To activate the virtual environment (Windows):
-```
-env/Scripts/activate
-```
-
-3. To activate the virtual environment (Linux / MacOS):
-```
-source env/bin/activate
-```
-
-4. Install dependencies:
+1. Install dependencies:
 ```
 pip install -r requirements.txt
 ```
@@ -86,7 +73,7 @@ or
 pip3 install -r requirements.txt
 ```
 
-5. Run:
+2. Run:
 ```
 python3 server.py
 ```
