@@ -51,6 +51,10 @@ tcp-udp-ethernet/
 │   ├── server.py
 │   └── udp_server.py
 │
+├── test/
+│   ├── test_client.c
+│   └── test_server.c
+│
 ├── .gitignore
 ├── LICENSE
 ├── README.md
@@ -59,6 +63,7 @@ tcp-udp-ethernet/
 
 - client/: Contains client side codes.
 - server/: Contains server side codes.
+- test/: Contains test codes written in C.
 - requirements.txt: Lists project dependencies.
 
 ## Raspberry Pi

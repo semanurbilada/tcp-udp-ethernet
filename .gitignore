@@ -1,2 +1,6 @@
 *env
 .DS_Store
+.vscode
+a.out
+client
+server
