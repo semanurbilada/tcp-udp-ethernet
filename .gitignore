@@ -2,3 +2,5 @@
 .DS_Store
 .vscode
 a.out
+build
+build/Debug

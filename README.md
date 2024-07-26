@@ -42,13 +42,14 @@ The project follows this directory structure:
 
 ```
 tcp-udp-ethernet/
-│
 ├── client/
-│   ├── client.py
+│   ├── tcp_client.py
+│   ├── udp_client_packet.py
 │   └── udp_client.py
 │
 ├── server/
-│   ├── server.py
+│   ├── tcp_server.py
+│   ├── udp_server_packet.py
 │   └── udp_server.py
 │
 ├── test/
@@ -94,5 +95,7 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 
 ## References
 
+- https://docs.python.org/3/library/zlib.html
 - https://wiki.python.org/moin/TcpCommunication
 - https://wiki.python.org/moin/UdpCommunication
+- https://www.geeksforgeeks.org/cyclic-redundancy-check-python/
