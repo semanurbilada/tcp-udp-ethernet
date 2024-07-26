@@ -1,4 +1,3 @@
-// Server program for UDP connection 
 #include <stdio.h> 
 #include <strings.h> 
 #include <sys/types.h> 
@@ -9,7 +8,6 @@
 #define PORT 5000 
 #define MAXLINE 1000 
 
-// Driver code 
 int main() 
 { 
     char buffer[100]; 
@@ -29,12 +27,15 @@ int main()
     
     // Receive the datagram 
     len = sizeof(cliaddr); 
-    int n = recvfrom(listenfd, buffer, sizeof(buffer), 0, (struct sockaddr*)&cliaddr, &len); // Receive message from server 
-    buffer[n] = '\0'; 
-    puts(buffer); 
+    while (1) 
+    { 
+        int n = recvfrom(listenfd, buffer, sizeof(buffer), 0, (struct sockaddr*)&cliaddr, (socklen_t*)&len); // Receive message from client 
+        buffer[n] = '\0'; 
+        printf("Client message: %s\n", buffer); 
         
-    // Send the response 
-    sendto(listenfd, message, MAXLINE, 0, (struct sockaddr*)&cliaddr, sizeof(cliaddr)); 
+        // Send the response 
+        sendto(listenfd, message, MAXLINE, 0, (struct sockaddr*)&cliaddr, sizeof(cliaddr)); 
+    }
 
     return 0;
 }
