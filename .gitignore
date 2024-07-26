@@ -2,7 +2,5 @@
 .DS_Store
 .vscode
 a.out
-client
-server
 build
 build/Debug
