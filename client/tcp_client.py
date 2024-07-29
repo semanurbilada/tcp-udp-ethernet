@@ -7,11 +7,13 @@ s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) #tcp
 port = 12345
 server_ip = 'server_ip'
 
+message_count = 10000
+
 s.connect((server_ip, port)) 
 print(f"Connected to server at {server_ip}:{port}")
 
 try:
-    for i in range(100):
+    for i in range(message_count):
         timestamp = time.time()
         message = f'{timestamp} Hello this is your client! Message {i+1}'
         s.send(message.encode('utf-8'))

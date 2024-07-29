@@ -49,5 +49,5 @@ while True:
     except Exception as e:
         print(f"Error connecting to client: {e}")
     finally:
-        s.close()
-        print("Connection closed")
+        #s.close()
+        print("Done!")
