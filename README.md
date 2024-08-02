@@ -32,7 +32,7 @@ This project aims to measuring TCP/UDP protocol performance with Python in Raspb
 * SD Card (32GB at least) and reader
 
 ### Notes
-1. 
+1. I initially tested with C-based implementations but did not achieve effective results.<br>Therefore, I focused on Python-based UDP packet transmission.
 
 </div>
 
@@ -79,13 +79,13 @@ or
 pip3 install -r requirements.txt
 ```
 
-2. Run:
+2. Run (example):
 ```
-python3 server.py
+python3 tcp_server.py
 ```
 and
 ```
-python3 client.py
+python3 tcp_client.py
 ```
 
 ## Licence
