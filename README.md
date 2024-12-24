@@ -12,7 +12,8 @@
 * [Project Structure](#project-structure)
 * [Raspberry Pi](#raspberry-pi)
     * [How To Run?](#how-to-run)
-* [Licence](#licence)
+* [Preview](#preview)
+* [License](#license)
 * [References](#references)
 
 ## Purpose
@@ -88,9 +89,10 @@ and
 python3 tcp_client.py
 ```
 
-## Licence
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/semanurbilada/tcp-udp-ethernet?tab=MIT-1-ov-file#readme) file for details.
+## Preview
+
+
 
 
 ## References
@@ -99,3 +101,8 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 - https://wiki.python.org/moin/TcpCommunication
 - https://wiki.python.org/moin/UdpCommunication
 - https://www.geeksforgeeks.org/cyclic-redundancy-check-python/
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/semanurbilada/tcp-udp-ethernet?tab=MIT-1-ov-file#readme) file for details.
