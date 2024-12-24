@@ -92,7 +92,10 @@ python3 tcp_client.py
 
 ## Preview
 
-
+<div align="center">
+   
+   ![Screenshot 2024-12-24 at 8 56 07 PM](https://github.com/user-attachments/assets/bb1616d5-f062-42d0-a15e-d433a5bef050)
+</div>
 
 
 ## References
